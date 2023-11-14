@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Orbitron&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Orbitron&family=Roboto:wght@300&family=Satisfy&display=swap');
 
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #content{
@@ -51,12 +53,14 @@ h1{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    
     /* justify-content: space-around; */
 }
 
 #leftContent h2{
     font-family: 'Amatic SC', sans-serif;
     font-size:3rem;
+    padding-left: 2rem;
     align-self: center;
 
 }
@@ -66,6 +70,105 @@ h1{
     height: 40%;
     background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    align-content: center;
+    position: relative;
+    top: 15%;
+    padding-left: 2rem;
+    
+    display: inline-block;
 }
+
+#leftContent > #bottomContent{
+    position: relative;
+    top: 20%;
+    padding-left: 2rem;
+}
+
+
+#column1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 80%;
+    width: 20vw;
+    justify-content: space-around;
+
+}
+
+#column2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40%;
+    width: 20vw;
+    height: 80%;
+    justify-content: space-around;
+}
+
+.row{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+}
+
+legend{
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #76AEED;
+}
+  
+button:active {
+    background-color: #407FC7;
+}
+
+span{
+    font-weight: bold;
+    color: #407FC7;
+}
+
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="email"]{
+    padding: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border: 1px solid #B0B0B0;
+    border-radius: 11px;
+}
+
+
+textarea:focus, input:focus{
+    outline: 2px solid #407FC7;;
+}
+
+input[type="password"]:invalid{
+    border-color: red;
+}
+
+input[type="password"]:focus{
+    border: blue;
+}
+
+  
+
+
+
+
 

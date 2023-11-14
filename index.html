@@ -24,11 +24,42 @@
             <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  </h2>
 
             <div id="formContent">
-                <p>Sign up!</p>
+                
+                <form action="get">
+                    <legend>Let's do this</legend>
+                    <div id="column1">
+                        <div class="row">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="row">
+                            <label for="pw">Password</label>
+                            <input type="password" name="pw" id="pw" required>
+                        </div>
+                    </div>
+                    <div id="column2">
+                        <div class="row">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="row">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div class="row">
+                            <label for="cPw">Password</label>
+                            <input type="password" name="cPw" id="cPw" required>
+                        </div>
+                    </div>         
             </div>
 
             <div id="bottomContent">
             <button type="submit">Create Account</button>
+        </form>
             <p>Already have an account? <span>Log in</span></p>
             </div>
         </div>       
